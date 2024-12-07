@@ -1,0 +1,268 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Portfolio</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            hr {
+                margin-top: 10%;
+                height: 1px;
+                margin-left: 5%;
+                margin-right: 5%;
+                background-color: black;
+            }
+
+            h1, h2, h3, h4 {
+                font-family: raleway;
+                text-align: center;
+            }
+
+            p {
+                font-family: roboto;
+                color: black;
+            }
+
+            .header-background {
+                background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_vkfzfIShnX_xhqwXRbIZtfUxNO-RCoqXgdAECnUdB36EP8wnV9hl-3qVaqOsHfRRPKYsiB7LjqIU0muKzBRxZQYvfjIjK3HSdndj7GiAzhCQCuL_eGd7-UHz2vyyAxLhiLQsr1DTjacW/s1600/University+of+San+Carlos+3.jpg);
+                margin: 0;
+                background-repeat: no-repeat;
+                background-size: 64.45% 100%;
+                width: 100%;
+                background-color: #CCCCCC;
+                height: 100%;
+            }
+
+            .logo-div {
+                
+                background-color: #CCCCCC;
+                height: 100%;
+                width: 35.55%;
+                float: right; 
+            }
+
+            .logo {
+                width: 50%;
+                margin-top: 10%;
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+
+            .info-container {
+                
+                height: 50%;
+                width: 90%;
+                margin-top: 5%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .description-container {
+                
+                width: 70%;
+                height: 50%;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 15%;
+                
+            }
+
+            .portfolioSelector_Odd {
+                background-color: green;
+                height: 16.67%;
+                position: relative;
+            }
+
+            .portfolioSelector_Even {
+                background-color: #CCCCCC;
+                height: 16.67%;
+                position: relative;
+            }
+
+            .portfolioSelector_Odd:hover,  .portfolioSelector_Even:hover{
+                cursor: pointer;
+            }
+
+            .portfolioSelector_Odd img,  .portfolioSelector_Even img {
+                float: left;
+                height: 100%;
+                width: 20%;
+                z-index: 3;
+            }
+
+            .portfolioName {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                z-index: 1;
+            }
+
+            .portfolioDescription {
+                background-color: #D49A00 ; /*#FFDB58 #D49A00 #E1A500*/
+                color:black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: -100%;
+                transition: left .3s ease-in-out;
+            }
+
+
+            .portfolioSelector_Odd:hover .portfolioDescription, .portfolioSelector_Even:hover .portfolioDescription{
+                left: 0%;
+            }
+
+        </style>
+
+        <script>
+           
+    
+        </script>
+    </head>
+    <body>
+        <div class="header-background">
+            <div class="logo-div">
+                
+                <img  class="logo" src="https://vectorseek.com/wp-content/uploads/2023/09/University-Of-San-Carlos-Logo-Vector.svg-.png">
+                <hr>
+                
+                <div class="info-container">
+                    <div class="header-container">
+                        
+                        <h1 style="text-align: center;">
+                            Portfolio
+                        </h1>
+
+                        <h4 style="text-align: center;"> 
+                            By Josephus M. Magdadaro
+                        </h4>
+                    </div>
+
+                    <div class="description-container">
+                        <p>
+                            This website is made as a project for CIS1102 (Introduction To Computing), it showcases six (6) portfolios following the requirements of said project.
+                            <br><br><br><br>The webpages for the portfolios will be linked at the bottom, along with a brief description summarizing the contents of each.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href = "port1.html">
+            <div class="portfolioSelector_Odd" id="select1">
+                <img src="https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/1bbf3e6555b2.jpg">
+            
+                <div class="portfolioDescription">
+                    <h2>Computer Science as Discipline, Computing Disciplines and Majors</h2>
+                </div>
+
+                <div class="portfolioName">
+                    <h1>    
+                    Portfolio 1
+                    </h1>   
+                </div>
+            </div>
+        </a>
+
+
+        <a href = "port2.html">
+            <div class="portfolioSelector_Even">
+                <img src="https://i2.wp.com/examplanning.com/wp-content/uploads/2019/09/types-of-information-systems.jpg?fit=768%2C768&ssl=1">
+
+                <div class="portfolioDescription">
+                    <h2>Data, Information, and Information Systems</h2>
+                </div>
+
+                <div class="portfolioName">
+                    <h1>
+                    Portfolio 2
+                    </h1>   
+                </div>
+            </div>
+        </a>
+
+
+        <a href = "port3.html">
+            <div class="portfolioSelector_Odd">
+                <img src="https://www.eeeguide.com/wp-content/uploads/2022/10/Hexadecimal-Number-System-01.jpg">
+
+                <div class="portfolioDescription">
+                    <h2>Number Systems</h2>
+                </div>
+
+                <div class="portfolioName">
+                    <h1>
+                    Portfolio 3
+                    </h1>   
+                </div>
+            </div>
+        </a>
+
+
+        <a href = "port4.html">
+            <div class="portfolioSelector_Even">
+                <img src="https://www.erp-information.com/wp-content/uploads/2023/06/hardware-vs-software-1.png">
+
+                <div class="portfolioDescription">
+                    <h2>Computer Hardware and Software: Their Implementation in the different institutions in the community</h2>
+                </div>
+
+                <div class="portfolioName">
+                    <h1>
+                    Portfolio 4
+                    </h1>   
+                </div>
+            </div>
+        </a>
+
+        <a href = "port5.html">
+            <div class="portfolioSelector_Odd">
+                <img src="https://th.bing.com/th/id/OIP.mr19_bv6IV8RV04QsNIlYQHaEU?rs=1&pid=ImgDetMain">
+
+                <div class="portfolioDescription">
+                    <h2>Comparative Study On Different Types Of Motherboards</h2>
+                </div>
+
+                <div class="portfolioName">
+                    <h1>
+                    Portfolio 5
+                    </h1>   
+                </div>
+            </div>
+        </a>
+
+        <a href = "port6.html">
+            <div class="portfolioSelector_Even">
+                <img src="https://th.bing.com/th/id/OIP.FXd3K3HwWp16hLF84oMUbwHaEO?rs=1&pid=ImgDetMain">
+
+                <div class="portfolioDescription">
+                    <h2>Comparative Study on Different Types of Computers</h2>
+                </div>
+
+                <div class="portfolioName">
+                    <h1>
+                    Portfolio 6
+                    </h1>   
+                </div>
+            </div>
+        </a>
+
+
+    </body>
+</html>

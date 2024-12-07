@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0; 
+            }
+
+            html ,body {
+                background-color: #CCCCCC;
+                height: 100%;
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            hr {
+                height: 1px;
+                margin-left: 5%;
+                margin-right: 5%;
+                background-color: black;
+            }
+
+            h1, h2, h3, h4 {
+                font-family: raleway;
+                text-align: center;
+            }
+
+            p {
+                font-family: roboto;
+                font-size: 20px;
+                color: black;
+            }
+
+            .header-title {
+                
+                height: 15%; 
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .header-title h1 {
+                float: left;
+            }
+
+            .paragraph-standard, .paragraph-class {
+
+                justify-content: center;
+                width: 85%;
+                float: center;
+                margin-left: 7.5%;
+                margin-right: 7.5%;
+                margin-top: 3%;
+            }
+
+            .paragraph-class h2{
+                text-align: left;
+            }
+
+            .class-description {
+                margin-top: 1%;
+            }
+
+            .button-doc-link button{
+                background-color: green;
+                margin-top: 5%;
+                margin-bottom: 3%;
+                margin-left: 7.5%;
+                border: 2px solid black;
+                color: white;
+                width: 20%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+
+            }
+
+            .button-doc-link:hover button{
+                background-color: darkgreen;
+                cursor: pointer;
+            }
